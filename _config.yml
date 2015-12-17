@@ -7,7 +7,7 @@ title: ss的小屋
 subtitle:
 description:
 author: jiashuai
-language: default
+language: zh-Hans
 timezone: 
 
 # URL
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: freemind
+theme: next
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -72,3 +72,4 @@ deploy:
     repo: git@github.com:shijiashuai/shijiashuai.github.io.git
   - type: git
     repo: git@gitcafe.com:jiashuai/jiashuai.git,gitcafe-pages
+duoshuo_shortname: jiashuai
