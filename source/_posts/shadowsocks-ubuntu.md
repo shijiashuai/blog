@@ -10,13 +10,9 @@ tags: [科学上网,Shadowsocks]
 <!--more-->
 ## 1. 安装Shadowsocks
 安装Shadowsocks很简单，首先安装`pip`
-
- 	apt-get install python-pip
-
+<pre>apt-get install python-pip</pre>
 然后使用`pip`安装Shadowsocks
-
-	pip install shadowsocks
-
+<pre>pip install shadowsocks</pre>
 安装完成
 
 ## 2. Shadowsocks的配置和使用
@@ -38,10 +34,10 @@ tags: [科学上网,Shadowsocks]
 >完整的配置文件写法见[这里](https://github.com/shadowsocks/shadowsocks/wiki/Configuration-via-Config-File)
 
 启动和停止Shadowsocks
-
+```shell
 	shadowsocks -c /etc/shadowsocks.json -d start
 	shadowsocks -d stop
-
+```
 `-d`参数的作用是把shadowsocks作为后台daemon程序运行
 
 >shadowsocks目前支持Windows/OSX/iOS/Android，客户端在[这里](https://github.com/shadowsocks/shadowsocks/wiki/Ports-and-Clients)
@@ -53,11 +49,11 @@ tags: [科学上网,Shadowsocks]
 首先确认你的Linux内核在锐速的[支持列表](http://my.serverspeeder.com/ls.do?m=availables)里，然后去注册一个锐速帐号
 
 安装
-
+```plain
 	wget http://my.serverspeeder.com/d/ls/serverSpeederInstaller.tar.gz
 	tar -xzf serverSpeederInstaller.tar.gz
 	bash serverSpeederInstaller.sh
-
+```
 输入用户名和密码以后一路enter确认用默认参数，最后会问你是否要开机启动和现在启动，推荐打开。
 
 输入`lsmod`看到有`appex0`模块就是加速成功了。
@@ -67,9 +63,7 @@ tags: [科学上网,Shadowsocks]
 其中`advinacc`,`maxmode`都改为1，DigitalOcean的网卡是支持`rsc`和`gso`加速的，我们也把它打开
 
 最后重新加载一下配置
-
-	service serverSpeeder reload
-
+<pre>service serverSpeeder reload</pre>
 打开YouTube测一下速，1080p视频几乎不需要缓冲
 ![youtube](/img/youtube1080p.png)
 
