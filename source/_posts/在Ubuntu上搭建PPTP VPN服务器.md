@@ -16,6 +16,7 @@ tags:
 ### 1.安装pptpd
 输入以下命令即可
 <pre>sudo apt-get install pptpd</pre>
+
 ### 2.设置pptp
 打开`pptpd-options`
 <pre>sudo vim /etc/ppp/pptpd-options</pre>

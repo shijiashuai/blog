@@ -71,5 +71,5 @@ deploy:
   - type: git
     repo: git@github.com:shijiashuai/shijiashuai.github.io.git
   - type: git
-    repo: git@gitcafe.com:jiashuai/jiashuai.git,gitcafe-pages
+    repo: git@git.coding.net:loveyimi/loveyimi.git,coding-pages
 duoshuo_shortname: jiashuai
